@@ -74,3 +74,5 @@ After running the platform, users can perform the following tasks:
 5. **Access Educational Resources:**
    - The platform offers articles, tips, and videos on mental health-related topics that users can access at any time.
 
+## LICENSE
+This project is licensed under the MIT License - see the LICENSE file for details
