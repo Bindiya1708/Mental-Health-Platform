@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anxiety Test</title>
+    <link rel="icon" type="image/png" href="icon.png" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <!-- Navigation and other header content -->
+    </header>
+
+    <section id="eating-disorder-test">
+        <span>Anxiety Test</span>
+        <div class="image1">
+            <img src="image 1.jpg" alt="Descriptive Alt Text" class="responsive-image">
+        </div>
+
+        <form id="anxiety-form">
+            <div id="form">
+                <div class="question">
+                    <label>1. Do you often feel restless or on edge?</label>
+                    <input type="radio" name="atq1" value="yes"> Yes
+                    <input type="radio" name="atq1" value="no"> No
+                </div>
+                <div class="question">
+                    <label>2. Are you easily fatigued or tired?</label>
+                    <input type="radio" name="atq2" value="yes"> Yes
+                    <input type="radio" name="atq2" value="no"> No
+                </div>
+                <div class="question">
+                    <label>3. Do you find it difficult to relax or calm down?</label>
+                    <input type="radio" name="atq3" value="yes"> Yes
+                    <input type="radio" name="atq3" value="no"> No
+                </div>
+                <div class="question">
+                    <label>4. Are you frequently worrying about different aspects of your life?</label>
+                    <input type="radio" name="atq4" value="yes"> Yes
+                    <input type="radio" name="atq4" value="no"> No
+                </div>
+                <div class="question">
+                    <label>5. Do you have difficulty concentrating or focusing?</label>
+                    <input type="radio" name="atq5" value="yes"> Yes
+                    <input type="radio" name="atq5" value="no"> No
+                </div>
+                <div class="question">
+                    <label>6. Are you experiencing muscle tension or physical symptoms such as headaches?</label>
+                    <input type="radio" name="atq6" value="yes"> Yes
+                    <input type="radio" name="atq6" value="no"> No
+                </div>
+                <div class="question">
+                    <label>7. Do you often feel a sense of impending doom or fear?</label>
+                    <input type="radio" name="atq7" value="yes"> Yes
+                    <input type="radio" name="atq7" value="no"> No
+                </div>
+                <div class="question">
+                    <label>8. Are you avoiding certain situations or activities because of anxiety?</label>
+                    <input type="radio" name="atq8" value="yes"> Yes
+                    <input type="radio" name="atq8" value="no"> No
+                </div>
+                <button type="button" onclick="calculateResult('anxiety')">Submit</button>
+            </div>
+        </form>
+        <div id="anxiety-result" class="result"></div>
+    </section>
+
+    <script src="tests.js"></script>
+</body>
+</html>

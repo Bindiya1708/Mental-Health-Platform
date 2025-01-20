@@ -1,0 +1,160 @@
+body {
+    font-family: 'Exo 2', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.image1 {
+    top: 10rem;
+    left: 0rem;
+    position: relative;
+    overflow: hidden;
+    object-fit: cover;
+    height: 100%;
+    z-index: -1;
+}
+#form {
+    flex: 1;
+    background-color: rgba(173, 216, 230, 0.8);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 50vw;
+    position: absolute;
+    top: 2rem;
+    right: 0rem;
+}
+span {
+    font-weight: bolder;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 20px;
+    position: absolute;
+    left: 4.0rem;
+    top: 4rem;
+    font-size: 2.5rem;
+}
+
+.question {
+    background-color: #f0f8ff;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    margin-bottom: 1.0rem;
+}
+
+.question label {
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #555;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.question input[type="radio"] {
+    margin-right: 10px; /* Space between radio button and its label */
+}
+.question input[type="number"] {
+    margin-right: 10px; /* Space between radio button and its label */
+}
+.question input[type="radio"] {
+    margin-right: 10px; /* Space between radio button and its label */
+}
+
+button {
+    background-color: rgba(100, 149, 237, 0.8); /* Light Cornflower Blue for the button */
+    color: #fff; /* White text on button */
+    border: 2px solid rgba(100, 149, 237, 0.8); /* Match border with background */
+    padding: 0.75rem 1.5rem;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    display: block;
+    width: 100%; /* Full width */
+    height: 50px; /* Consistent height */
+    box-shadow: 0 4px 6px rgba(4, 11, 8, 0.813);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-family: 'Exo 2', sans-serif;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #4682b4; /* Darker shade on hover */
+}
+
+/* Alert Styles */
+.alert {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 15px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(4, 11, 8, 0.813);
+    opacity: 0.9;
+    z-index: 1000;
+    animation: fadeIn 0.5s;
+}
+
+.alert-success {
+    background-color: #d4edda; /* Soft green */
+    color: #155724;
+}
+
+.alert-warning {
+    background-color: #fff3cd; /* Soft yellow */
+    color: #856404;
+}
+
+.alert-danger {
+    background-color: #f8d7da; /* Soft pink */
+    color: #721c24;
+}
+
+/* Fade In Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateX(-50%) translateY(-20px);
+    }
+    to {
+        opacity: 0.9;
+        transform: translateX(-50%) translateY(0);
+    }
+}
+
+/* Results Section */
+.results {
+    margin-top: 25px;
+}
+
+.results p {
+    font-size: 20px;
+    font-weight: bold;
+    color: #0288d1; /* Bright blue */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .disorder-grid {
+        grid-template-columns: 1fr; /* Single column for small screens */
+    }
+}
+
+#alert {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 15px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(4, 11, 8, 0.813);
+    opacity: 0.9;
+    z-index: 1000;
+    animation: fadeIn 0.5s;
+}
+

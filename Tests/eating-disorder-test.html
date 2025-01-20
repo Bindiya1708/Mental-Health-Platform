@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eating Disorder Test</title>
+    <link rel="icon" type="image/png" href="icon.png" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <!-- Navigation and other header content -->
+    </header>
+
+    <section id="eating-disorder-test">
+        <span>Eating Disorder Test</span>
+        <div class="image1">
+            <img src="image 1.jpg" alt="Descriptive Alt Text" class="responsive-image">
+        </div>
+
+        <form id="eating-disorder-form">
+            <div id="form">
+                <div class="question">
+                    <label>1. Do you have a preoccupation with your weight or body shape?</label>
+                    <input type="radio" name="edq1" value="yes"> Yes
+                    <input type="radio" name="edq1" value="no"> No
+                </div>
+                <div class="question">
+                    <label>2. Are you frequently dissatisfied with your appearance?</label>
+                    <input type="radio" name="edq2" value="yes"> Yes
+                    <input type="radio" name="edq2" value="no"> No
+                </div>
+                <div class="question">
+                    <label>3. Do you engage in binge eating or purging behaviors?</label>
+                    <input type="radio" name="edq3" value="yes"> Yes
+                    <input type="radio" name="edq3" value="no"> No
+                </div>
+                <div class="question">
+                    <label>4. Are you overly concerned with the calories or fat content of the food you eat?</label>
+                    <input type="radio" name="edq4" value="yes"> Yes
+                    <input type="radio" name="edq4" value="no"> No
+                </div>
+                <div class="question">
+                    <label>5. Do you avoid eating certain foods or meals for fear of gaining weight?</label>
+                    <input type="radio" name="edq5" value="yes"> Yes
+                    <input type="radio" name="edq5" value="no"> No
+                </div>
+                <div class="question">
+                    <label>6. Have you noticed significant fluctuations in your weight?</label>
+                    <input type="radio" name="edq6" value="yes"> Yes
+                    <input type="radio" name="edq6" value="no"> No
+                </div>
+                <div class="question">
+                    <label>7. Do you feel a lack of control over your eating habits?</label>
+                    <input type="radio" name="edq7" value="yes"> Yes
+                    <input type="radio" name="edq7" value="no"> No
+                </div>
+                <div class="question">
+                    <label>8. Are you obsessed with exercise or controlling your weight through extreme measures?</label>
+                    <input type="radio" name="edq8" value="yes"> Yes
+                    <input type="radio" name="edq8" value="no"> No
+                </div>
+                <button type="button" onclick="calculateResult('eating-disorder')">Submit</button>
+            </div>
+        </form>
+        <div id="eating-disorder-result" class="result"></div>
+    </section>
+
+    <script src="tests.js"></script>
+</body>
+</html>

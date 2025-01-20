@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Depression/Anxiety Test</title>
+    <link rel="icon" type="image/png" href="icon.png" />
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <div id="alert"></div>
+    <span>Depression/Anxiety <br>Test </br></span>
+
+    <section id="depression-test">
+        <div class="image1">
+            <img src="image 1.jpg" alt="Descriptive Alt Text" class="responsive-image">
+        </div>
+        <div class="image1">
+            <img src="image 1.jpg" alt="Descriptive Alt Text" class="responsive-image">
+        </div>
+
+        <form id="depression-form" onsubmit="submitForm(event)">
+            <div id="form">
+                <div class="question">
+                    <label for="age">What is your age?</label>
+                    <input type="number" id="age" name="age" placeholder="Enter your age" required>
+                </div>
+                <div class="question">
+                    <label for="marital-status">What is your marital status?</label>
+                    <select id="marital-status" name="marital-status" required>
+                        <option value="">Select...</option>
+                        <option value="single">Single</option>
+                        <option value="married">Married</option>
+                        <option value="divorced">Divorced</option>
+                        <option value="widowed">Widowed</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="question">
+                    <label for="education">What is your highest level of education?</label>
+                    <select id="education" name="education" required>
+                        <option value="">Select...</option>
+                        <option value="none">None</option>
+                        <option value="highschool">High School</option>
+                        <option value="associate">Associate's Degree</option>
+                        <option value="bachelor">Bachelor's Degree</option>
+                        <option value="master">Master's Degree</option>
+                        <option value="doctorate">Doctorate</option>
+                    </select>
+                </div>
+                <div class="question">
+                    <label for="children">How many children do you have, if any?</label>
+                    <input type="number" id="children" name="children" placeholder="Enter number of children" min="0" value="0">
+                </div>
+                <div class="question">
+                    <label for="employment-status">What is your employment status?</label>
+                    <select id="employment-status" name="employment-status" required>
+                        <option value="">Select...</option>
+                        <option value="unemployed">Unemployed</option>
+                        <option value="employed">Employed</option>
+                        <option value="self-employed">Self-employed</option>
+                        <option value="student">Student</option>
+                    </select>
+                </div>
+                <div class="question">
+                    <label>Do you smoke?</label>
+                    <input type="radio" name="smoke" value="yes" required> Yes
+                    <input type="radio" name="smoke" value="no"> No
+                </div>
+                <div class="question">
+                    <label for="alcohol-consumption">How often do you consume alcohol?</label>
+                    <select id="alcohol-consumption" name="alcohol-consumption" required>
+                        <option value="">Select...</option>
+                        <option value="never">Never</option>
+                        <option value="occasionally">Occasionally</option>
+                        <option value="regularly">Regularly</option>
+                    </select>
+                </div>
+                <div class="question">
+                    <label for="sleep-patterns">How would you describe your sleep patterns?</label>
+                    <select id="sleep-patterns" name="sleep-patterns" required>
+                        <option value="">Select...</option>
+                        <option value="insufficient">Insufficient</option>
+                        <option value="sufficient">Sufficient</option>
+                        <option value="excessive">Excessive</option>
+                    </select>
+                </div>
+                <div class="question">
+                    <label>Do you have a history of any chronic medical conditions?</label>
+                    <input type="radio" name="chronic-conditions" value="yes" required> Yes
+                    <input type="radio" name="chronic-conditions" value="no"> No
+                </div>
+                <div class="question">
+                    <label>Do you have a family history of depression?</label>
+                    <input type="radio" name="family-history" value="yes" required> Yes
+                    <input type="radio" name="family-history" value="no"> No
+                </div>
+                <div class="question">
+                    <label for="dietary-habits">How would you describe your dietary habits?</label>
+                    <select id="dietary-habits" name="dietary-habits" required>
+                        <option value="">Select...</option>
+                        <option value="healthy">Healthy</option>
+                        <option value="moderate">Moderate</option>
+                        <option value="unhealthy">Unhealthy</option>
+                    </select>
+                </div>
+        
+                <div class="question">
+                    <label for="physical-activity">What is your physical activity level?</label>
+                    <select id="physical-activity" name="physical-activity" required>
+                        <option value="">Select...</option>
+                        <option value="sedentary">Sedentary</option>
+                        <option value="moderate">Moderate</option>
+                        <option value="active">Active</option>
+                    </select>
+                </div>
+        
+                <div class="question">
+                    <label>Do you have a history of mental illness?</label>
+                    <input type="radio" name="mental-illness" value="yes" required> Yes
+                    <input type="radio" name="mental-illness" value="no"> No
+                </div>
+        
+                <div class="question">
+                    <label>Do you have a history of substance abuse?</label>
+                    <input type="radio" name="substance-abuse" value="yes" required> Yes
+                    <input type="radio" name="substance-abuse" value="no"> No
+                </div>
+        
+                <div class="question">
+                    <label for="mood-rating">How would you rate your mood over the past week?</label>
+                    <select id="mood-rating" name="mood-rating" required>
+                        <option value="">Select...</option>
+                        <option value="happy">Happy</option>
+                        <option value="sad">Sad</option>
+                        <option value="angry">Angry</option>
+                    </select>
+                </div>
+        
+                <div class="question">
+                    <label>Have you felt nervous or anxious without a clear reason recently?</label>
+                    <input type="radio" name="nervous" value="yes" required> Yes
+                    <input type="radio" name="nervous" value="no"> No
+                </div>
+        
+                <div class="question">
+                    <label>Do you often feel restless?</label>
+                    <input type="radio" name="restless" value="yes" required> Yes
+                    <input type="radio" name="restless" value="no"> No
+                </div>
+        
+                <div class="question">
+                    <label>Do you often feel fatigued or tired?</label>
+                    <input type="radio" name="fatigue" value="yes" required> Yes
+                    <input type="radio" name="fatigue" value="no"> No
+                </div>
+        
+                <div class="question">
+                    <label for="gender">What is your gender?</label>
+                    <select id="gender" name="gender" required>
+                        <option value="">Select...</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+        <div id="result"></div> 
+    </section>
+
+    <script>
+        async function submitForm(event) {
+            event.preventDefault();
+
+            const formData = {
+                age: document.getElementById('age').value,
+                marital_status: document.querySelector('select[name="marital-status"]').value,
+                education_level: document.getElementById('education').value,
+                num_children: document.getElementById('children').value || 0,
+                employment_status: document.querySelector('select[name="employment-status"]').value,
+                smoking_status: document.querySelector('input[name="smoke"]:checked').value,
+                alcohol_consumption: document.querySelector('select[name="alcohol-consumption"]').value,
+                sleep_patterns: document.querySelector('select[name="sleep-patterns"]').value,
+                chronic_conditions: document.querySelector('input[name="chronic-conditions"]:checked')?.value || 'No',
+                family_history: document.querySelector('input[name="family-history"]:checked')?.value || 'No'
+            };
+
+            try {
+                const response = await fetch('http://127.0.0.1:5000/predict', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(formData)
+                });
+
+                if (!response.ok) throw new Error('Network response was not ok');
+
+                const result = await response.json();
+                displayAlert(result.prediction);
+            } catch (error) {
+                console.error('Error:', error);
+                displayAlert("Error: " + error.message, true);
+            }
+        }
+
+        function displayAlert(message, isError = false) {
+            const alertDiv = document.getElementById('alert');
+            alertDiv.innerText = message;
+            alertDiv.className = isError ? 'alert-danger' : 'alert-success';
+            alertDiv.style.display = 'block'; // Show the alert
+            setTimeout(() => {
+                alertDiv.style.display = 'none'; // Hide after 5 seconds
+            }, 5000);
+        }
+    </script>
+    
+</body>
+</html>

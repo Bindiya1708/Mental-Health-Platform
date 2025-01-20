@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Addiction Test</title>
+    <link rel="icon" type="image/png" href="icon.png" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <section id="addiction-test">
+        <span>Addiction Test</span>
+        <div class="image1">
+            <img src="image 1.jpg" alt="Descriptive Alt Text" class="responsive-image">
+        </div>
+        
+        <form id="addiction-form">
+            <div id="form">
+                <div class="question">
+                    <label>1. Do you find yourself using substances or engaging in behaviors more often than intended?</label>
+                    <input type="radio" name="adq1" value="yes"> Yes
+                    <input type="radio" name="adq1" value="no"> No
+                </div>
+                <div class="question">
+                    <label>2. Have you experienced a strong desire to use a substance or engage in a behavior?</label>
+                    <input type="radio" name="adq2" value="yes"> Yes
+                    <input type="radio" name="adq2" value="no"> No
+                </div>
+                <div class="question">
+                    <label>3. Are you spending a lot of time obtaining, or recovering from the substance or behavior?</label>
+                    <input type="radio" name="adq3" value="yes"> Yes
+                    <input type="radio" name="adq3" value="no"> No
+                </div>
+                <div class="question">
+                    <label>4. Do you experience withdrawal symptoms when you are unable to engage in the behavior?</label>
+                    <input type="radio" name="adq4" value="yes"> Yes
+                    <input type="radio" name="adq4" value="no"> No
+                </div>
+                <div class="question">
+                    <label>5. Have you continued using the substance or engaging in the behavior despite negative consequences?</label>
+                    <input type="radio" name="adq5" value="yes"> Yes
+                    <input type="radio" name="adq5" value="no"> No
+                </div>
+                <div class="question">
+                    <label>6. Do you find it difficult to control or reduce your usage or behavior?</label>
+                    <input type="radio" name="adq6" value="yes"> Yes
+                    <input type="radio" name="adq6" value="no"> No
+                </div>
+                <div class="question">
+                    <label>7. Are your relationships or work performance suffering due to your addiction?</label>
+                    <input type="radio" name="adq7" value="yes"> Yes
+                    <input type="radio" name="adq7" value="no"> No
+                </div>
+                <div class="question">
+                    <label>8. Do you experience a loss of interest in activities you once enjoyed?</label>
+                    <input type="radio" name="adq8" value="yes"> Yes
+                    <input type="radio" name="adq8" value="no"> No
+                </div>
+                <button type="button" onclick="calculateResult('addiction')">Submit</button>
+            </div>
+            <div id="addiction-result" class="result"></div>
+        </form>
+    </section>
+
+    <script src="tests.js"></script>
+</body>
+</html>

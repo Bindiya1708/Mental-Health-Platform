@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bipolar Test</title>
+    <link rel="icon" type="image/png" href="icon.png" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <!-- Navigation and other header content -->
+    </header>
+    <section id="bipolar-test">
+        <span>Bipolar Disorder Test</span>
+        <div class="image1">
+            <img src="image 1.jpg" alt="Descriptive Alt Text" class="responsive-image">
+        </div>
+
+        <form id="bipolar-form">
+            <div id="form">
+                <div class="question">
+                    <label>1. Do you experience periods of intense mood swings, from extreme highs to lows?</label>
+                    <input type="radio" name="bq1" value="yes"> Yes
+                    <input type="radio" name="bq1" value="no"> No
+                </div>
+                <div class="question">
+                    <label>2. Have you noticed periods of unusually high energy or irritability?</label>
+                    <input type="radio" name="bq2" value="yes"> Yes
+                    <input type="radio" name="bq2" value="no"> No
+                </div>
+                <div class="question">
+                    <label>3. Do you often feel excessively optimistic or euphoric?</label>
+                    <input type="radio" name="bq3" value="yes"> Yes
+                    <input type="radio" name="bq3" value="no"> No
+                </div>
+                <div class="question">
+                    <label>4. Are there times when you feel hopeless or depressed for an extended period?</label>
+                    <input type="radio" name="bq4" value="yes"> Yes
+                    <input type="radio" name="bq4" value="no"> No
+                </div>
+                <div class="question">
+                    <label>5. Do you have trouble sleeping or feel unusually rested despite lack of sleep?</label>
+                    <input type="radio" name="bq5" value="yes"> Yes
+                    <input type="radio" name="bq5" value="no"> No
+                </div>
+                <div class="question">
+                    <label>6. Have you engaged in risky behaviors during mood swings?</label>
+                    <input type="radio" name="bq6" value="yes"> Yes
+                    <input type="radio" name="bq6" value="no"> No
+                </div>
+                <div class="question">
+                    <label>7. Do you experience periods of excessive talking or racing thoughts?</label>
+                    <input type="radio" name="bq7" value="yes"> Yes
+                    <input type="radio" name="bq7" value="no"> No
+                </div>
+                <div class="question">
+                    <label>8. Do you feel a lack of motivation or energy during low periods?</label>
+                    <input type="radio" name="bq8" value="yes"> Yes
+                    <input type="radio" name="bq8" value="no"> No
+                </div>
+                <button type="button" onclick="calculateResult('bipolar')">Submit</button>
+            </div>
+        </form>
+        <div id="bipolar-result" class="result"></div>
+    </section>
+
+    <script src="tests.js"></script>
+</body>
+</html>
