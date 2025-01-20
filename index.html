@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mental Wellness Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-left">
+                <ul>
+                    <li><button class="nav-btn" onclick="location.href='#home-section'">Home</button></li>
+                    <li><button class="nav-btn" onclick="location.href='#about-section'">About Mental Health</button></li>
+                    <li><button class="nav-btn" onclick="location.href='#resources-section'">Resources</button></li>
+                    <li><button class="nav-btn" onclick="location.href='#contact-section'">Contact Us</button></li>
+                </ul>
+            </div>
+    
+            <div class="nav-right">
+                <!-- Login and Sign Up Buttons -->
+                <button class="login-btn" onclick="openLoginModal()">Login</button>
+                <button class="register-btn" onclick="openSignUpModal()">Sign Up</button>
+            </div>
+        </nav>
+    </header>
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeLoginModal()">&times</span>
+            <h2>Login</h2>
+            <form>
+                <label for="login-email">Email:</label>
+                <input type="email" id="login-email" placeholder="Enter your email" required>
+                <label for="login-password">Password:</label>
+                <input type="password" id="login-password" placeholder="Enter your password" required>
+                <button type="submit" class="submit-btn">Login</button>
+            </form>
+        </div>
+    </div>
+    
+    <!-- Sign Up Modal -->
+    <div id="signUpModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeSignUpModal()">&times</span>
+            <h2>Sign Up</h2>
+            <form>
+                <label for="signup-username">Username:</label>
+                <input type="text" id="signup-username" placeholder="Enter your username" required>
+                <label for="signup-email">Email:</label>
+                <input type="email" id="signup-email" placeholder="Enter your email" required>
+                <label for="signup-password">Password:</label>
+                <input type="password" id="signup-password" placeholder="Enter your password" required>
+                <button type="submit" class="submit-btn">Sign Up</button>
+            </form>
+        </div>
+    </div>
+    
+    <section class="hero-section">
+            <h1>Your Mental <br>Well-Being</h1> 
+            <img src="4.jpg" alt="">
+            <p> mental:me - 
+            <span><br> a companion for mental wellness</span> </p>
+    </section>
+        <div class="image">
+            <img src="111.png" alt="">
+        </div>
+
+        <div class="therapy-box">
+            <h3>Individual Therapy</h3>
+            <p>Take personalized mental health assessments to better understand your well-being,
+             and explore recommendations based on your results.</p>
+            <img src="3.jpg" alt="" >
+        </div>
+
+        <div class="services">
+            <img src="22.jpg" alt="">
+            <p>We offer a wide range of services and resources to cater to your specific mental Health</p>
+        </div>
+
+    <div class="star star-1"></div>
+    <div class="star star-2"></div>
+    <div class="star star-3"></div>
+    <div class="star star-4"></div>
+    <div class="star star-5"></div>
+    <div class="star star-6"></div>
+
+    <div class="Learn-More">
+        <h3>Learn more <br>about us</h3>
+        <a class="" href='#about-section'>Learn More <i class="fas fa-arrow-right rotated-arrow"></i></a>
+    </div>
+    
+    <section id="about-section" class="hero">
+
+        <div class="about-content">
+            <div class="left-content">
+                <h1> Mental Health <span>is  wealth </span></h1>
+                <div class="h3">Your mental health is important. We provide resources and tools to help you understand
+                and manage your mental health better.We are dedicated to promoting mental well-being by providing a 
+                safe and supportive space for everyone. <br>Our mission is to empower individuals with the tools and resources
+                they need to navigate life's challenges, offering personalized support to help improve mental health and 
+                overall happiness.
+                </h3>
+                <div class="left-image">
+                    <img src="6.jpg" alt="">
+                </div>
+            </div>
+            <div class="right-content">
+                <p>Our online tests are designed to give you quick insights into your mental well-being. Whether you’re
+                    dealing with anxiety, depression, or other mental health issues, we offer support and information to help 
+                    you take the next steps towards feeling better.</p>
+                <br>
+                <p><span>Discover more about different mental health conditions and take our interactive tests to assess your 
+                mental health status. Remember, seeking help is a sign of strength.</span></p>
+                <img src="5.jpg" alt="">
+                <div class="calm">Calm</div>
+                <div class="curious">Curious</div>
+                <div class="happier">Happier</div>
+                <div class="confident">Confident</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="test-section" class="info-section">
+        <div class="about-test">
+            <h2>About Mental Health</h2>
+            <p>Mental health encompasses emotional, psychological, and social well-being. It affects how we think, feel, and act, and is crucial at every stage of life.</p>
+            <p>Understanding mental health is the first step towards improving it. This section provides information on various mental health conditions, their symptoms, and treatment options. Whether you are seeking information for yourself or a loved one, we hope to provide valuable insights and support.</p>
+            <p>If you’re struggling or just curious, take advantage of our resources and tests to learn more about your mental health. Knowledge is power, and it’s the first step towards managing and improving your well-being.</p>
+            <img src="7.png" alt="">
+        </div>
+
+        <!-- Disorder Grid -->
+        <section class="info-section1">
+            <h2>Disorder Tests</h2>
+            <div class="disorder-grid">
+
+                <div class="disorder-item" id="adhd-test">
+                    <img src="11.jpg" alt="">
+                    <a href="adhd-test.html" >ADHD Test</a>
+                </div>
+                <div class="disorder-item" id="bipolar-test">
+                    <img src="10.jpg" alt="">
+                    <a href="bipolar-test.html" >Bipolar Test</a>
+                </div>
+                <div class="disorder-item" id="eating-disorder-test">
+                    <img src="9.jpg" alt="">
+                    <a href="eating-disorder-test.html" >Eating Disorder <br>Test</a>
+                </div>
+                <div class="disorder-item" id="addiction-test">
+                    <img src="13.jpg" alt="">
+                    <a href="addiction-test.html" >Addiction Test</a>
+                </div>
+                <!-- New Tests -->
+                <div class="disorder-item" id="depression-test">
+                    <img src="12.jpg" alt="">
+                    <a href="depression-test.html" >Depression Test</a>
+                </div>
+                <div class="disorder-item" id="anxiety-test">
+                    <img src="8.jpg" alt="">
+                    <a href="anxiety-test.html" >Anxiety Test</a>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <section id="resources-section">
+        <span>Resources</span>
+        <p>Explore a range of resources to support your mental health journey. This section includes information on hotlines, support groups, educational materials, and other tools that can provide help and guidance.</p>
+        
+        <div class="hotlines">
+            <h3>Hotlines</h3>
+            <ul>
+                <li><i class="fas fa-phone-alt"></i> <strong>National Suicide Prevention Lifeline:</strong> <a href="tel:1-800-273-8255">1-800-273-8255</a> - A hotline for individuals in crisis or needing emotional support.</li>
+                <li><i class="fas fa-sms"></i> <strong>Crisis Text Line:</strong> <a href="https://www.crisistextline.org/" target="_blank">Text HOME to 741741</a> - Provides 24/7 support via text.</li>
+            </ul>
+        </div>
+        
+        <div class="support-groups">
+            <h3>Support Groups</h3>
+            <ul>
+                <li><i class="fas fa-users"></i> <strong>Local Support Groups:</strong> <a href="https://www.mentalhealthamerica.net/find-support-groups" target="_blank">Find local support groups</a>.</li>
+                <li><i class="fas fa-globe"></i> <strong>Online Communities:</strong> <a href="https://www.reddit.com/r/mentalhealth/" target="_blank">Reddit Mental Health Community</a> - Join discussions and find support.</li>
+            </ul>
+        </div>
+        
+        <div class="educational-materials">
+            <h3>Educational Materials</h3>
+            <ul>
+                <li><i class="fas fa-book"></i> <strong>Articles and Guides:</strong> <a href="https://www.mentalhealth.gov/basics/what-is-mental-health" target="_blank">Mental Health Basics</a> - Learn about mental health conditions and treatment options.</li>
+                <li><i class="fas fa-video"></i> <strong>Videos and Webinars:</strong> <a href="https://www.youtube.com/user/mentalhealthorg" target="_blank">Mental Health YouTube Channel</a> - Watch educational videos on mental health topics.</li>
+            </ul>
+        </div>
+        
+        <div class="therapist-finder">
+            <h3>Therapist Finder</h3>
+            <ul>
+                <li><i class="fas fa-user-md"></i> <strong>Find a Therapist:</strong> <a href="https://www.psychologytoday.com/us/therapists" target="_blank">Psychology Today Therapist Directory</a> - Search for licensed therapists and counselors.</li>
+            </ul>
+        </div>
+        
+        <div class="self-help">
+            <h3>Self-Help Tools</h3>
+            <ul>
+                <li><i class="fas fa-mobile-alt"></i> <strong>Mental Health Apps:</strong> <a href="https://www.headspace.com/" target="_blank">Headspace</a> - Meditation and mindfulness app.</li>
+                <li><i class="fas fa-book-reader"></i> <strong>Books and Resources:</strong> <a href="https://www.goodreads.com/shelf/show/mental-health" target="_blank">Books on Mental Health</a> - Recommended reading for mental health management.</li>
+            </ul>
+        </div>
+        
+        <div class="emergency-resources">
+            <h3>Emergency Resources</h3>
+            <ul>
+                <li><i class="fas fa-ambulance"></i> <strong>Emergency Contacts:</strong> <a href="https://www.mentalhealth.gov/get-help/immediate-help" target="_blank">Immediate Help Resources</a> - Contact information for emergencies.</li>
+                <li><i class="fas fa-shield-alt"></i> <strong>Safety Plans:</strong> <a href="https://www.suicidepreventionlifeline.org/safety-plans/" target="_blank">Create a Safety Plan</a> - Guidance on creating a personal safety plan.</li>
+            </ul>
+        </div>
+    </section>
+    
+    <section id="contact-section" >
+        <h2>Contact Us</h2>
+        <p>If you have any questions or need support, feel free to reach out to us. We are here to assist you with any inquiries or concerns you may have. Whether you need help with our tests, resources, or anything else related to mental health, we're just a message away.</p>
+        <p>Contact us through the details below, and we’ll get back to you as soon as possible. Your feedback is important to us, and we’re committed to providing the support you need.</p>
+        <p>Email: <a href="mailto:support@example.com">support@example.com</a></p>
+        <p>Phone: <a href="tel:+1234567890">+1 (234) 567-890</a></p>
+    </section>
+</body>
+
+<footer class="footer"><p>© Copyright 2024 | Mental Health Detection. </p>
+    <br>
+    <p>MHD  is an educational program intended to help inform people about options they have in getting
+        help for mental health issues. It may suggest tools and resources that offer information, treatment services, 
+        ,and/or ways to connect with others. It does not represent its results as an exhaustive list of all services
+        available to a given individual for a given mental health concern, as an endorsement of specific treatments 
+        or services, or as a replacement for treatment or services as performed by a qualified provider. For any and
+        all suggestions, comments,or questions, please contact <a href="#contact-section">Mental Health Detection.</a>
+    </p>
+    
+</footer>
+<script src="scripts.js"></script>
+</html>
