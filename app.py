@@ -16,7 +16,7 @@ def home():
     return render_template('index.html')
 
 # Load and preprocess the data
-anxiety_dataset = pd.read_csv('anxiety_dataset.csv')
+anxiety_dataset = pd.read_csv('Dataset/anxiety_dataset.csv')
 depression_dataset = pd.read_csv('depression_data.csv')
 
 # Add Target column
