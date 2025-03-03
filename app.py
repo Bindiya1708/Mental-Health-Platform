@@ -17,7 +17,7 @@ def home():
 
 # Load and preprocess the data
 anxiety_dataset = pd.read_csv('Dataset/anxiety_dataset.csv')
-depression_dataset = pd.read_csv('Dataset/depression.csv.gz', compression="gzip")
+depression_dataset = pd.read_csv('Dataset/depression_data.csv.gz', compression="gzip")
 
 # Add Target column
 anxiety_dataset['Target'] = 2  # Anxiety
